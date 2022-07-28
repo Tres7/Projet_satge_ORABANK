@@ -1,0 +1,108 @@
+h1{
+	color: green;
+	font-family: sans-serif;
+	font-size: 50px;
+}
+
+.hi{
+	font-size: 50px;
+}
+
+/*.major{
+	color: green;
+}*/
+
+.navbar-brand{
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	animation-duration: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
+.monBoutton {
+    background-color: #007BFF;
+    Color:Maroon;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 3px;
+    cursor: pointer; 
+    box-shadow: 0 8px 16px 0 grey;
+    text-decoration: none;   
+  }
+
+  .monBoutton:hover {
+    background-color: grey;
+  }
+
+  75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+}
+
+/*.navbar-toggler{
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}*/
+
+h2{
+	color: green;
+	font-family: unset;
+}
+ul{
+	color: green;
+	list-style-type: none;
+}
+
+/*.nin{
+	list-style: none;
+}
+
+.fin{
+	list-style-type: none;
+}*/
+/*.card-body{
+	width: 100px;
+	height: 0px;
+	padding-top: 75%;
+	box-shadow: 0px 0px 10px #777;
+	background-color: #EDEDED;
+	background-size: contain;
+	animation:  fondu 15s ease-in-out infinite;
+}
+
+.card h-100{
+	max-width: 576px;
+	margin: 50px auto;
+}
+
+@keyframes fondu{
+	0%{background-image: url("credit3.jpg");}
+	33.33%{background-image: url("credit2.png0");}
+	66.67%{background-image: url("immobilier.png");}
+	100%{background-image: url("Conso.jpeg");}
+}*/

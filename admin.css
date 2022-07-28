@@ -1,0 +1,22 @@
+
+
+.user input[class="btn btn-primary btn-user btn-block"]{
+	background: #008000;
+}
+
+.bg-gradient-primary{
+	background: #008000;
+}
+
+.text-center a[class="small"]{
+	color: #008000;
+}
+
+.user input[class="btn btn-primary btn-user btn-block"]:hover{
+	cursor: pointer;
+	background: green;
+}
+
+/*.row input[class="col-lg-6 d-none d-lg-block bg-login-image"]{
+	background-image: url("Ora.jpeg");
+}*/

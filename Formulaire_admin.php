@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="admin.css" rel="stylesheet">
 
 </head>
 
@@ -36,7 +36,10 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class=""></div>
+                        	<div class="col-lg-6 d-none d-lg-block bg-login">
+                        		<img src="Ora.jpeg" height="150">
+                        	</div>
+                            
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
@@ -55,12 +58,12 @@
                                             <input type="text" class="form-control form-control-user" name="Accreditation"
                                                 placeholder="Niveau d'accréditation..." required="required" autocomplete="off">
                                         </div>
-                                        <div class="form-group">
+                                        <!--div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
                                                 <label class="custom-control-label" for="customCheck">Se souvenir</label>
                                             </div>
-                                        </div>
+                                        </div-->
                                         <input type="Submit" class="btn btn-primary btn-user btn-block" value="Connexion" name="Submit">
                                         <!--a href="" type="Submit" class="btn btn-primary btn-user btn-block" name="Submit">
                                             Connexion
@@ -74,9 +77,9 @@
                                         </a-->
                                     </form>
                                     <hr>
-                                    <div class="text-center">
+                                    <!--div class="text-center">
                                         <a class="small" href="forgot-password.html">Mot de passe oublié?</a>
-                                    </div>
+                                    </div-->
                                     <!--div class="text-center">
                                         <a class="small" href="register.html">Create an Account!</a>
                                     </div-->

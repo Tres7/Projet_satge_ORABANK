@@ -57,17 +57,19 @@ float: right;
 a:hover {
 text-decoration: underline;
 }
+
+
 /*formulaire d'ajout d'administration*/
 form .inputs  input[type="text"], input[type="number"],input[type="password"]{
 	background-size: cover;
 	background-repeat: no-repeat;
-	display:flex;
+	display:block;
 	justify-content:center;
 	align-items: center;
-	background-color:rgba(0, 0, 0, 0.4);/*#f5f5f5*/;
-	font-family: 'Roboto', sans-serif;
+	background-color:rgba(0, 0, 0, 0.4);
 	display: flex;
 	flex-direction: column;
+    
 }
 
 
@@ -190,7 +192,7 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
             <li class="nav-item active">
                 <a class="nav-link" href="question.php">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Ajouter une question</span>
+                    <span>Modification du bot</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -207,18 +209,18 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
             </li>
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item active">
+            <!--i class="nav-item active">
                 <a class="nav-link" href="Reponse.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Ajouter une réponse</span></a>
-            </li>
+            </li-->
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item active">
+            <!--li class="nav-item active">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
-            </li>
+            </li-->
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -229,11 +231,11 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
             </div>
 
             <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
+            <!--div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
                 <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
+            </div-->
 
         </ul>
         <!-- End of Sidebar -->
@@ -454,21 +456,21 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Ajouter un administrateur</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <!--a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
+                    </div-->
 
                     <!-- Content Row -->
                     <div class="row">
                         <form method="post" enctype="multipart/form-data" action="Recup_ajout_ad.php">
 		                <!--h1>Connexion</h1-->
 		                <div  class="inputs">
-                            <label>Nom d'utilisateur:</label> <input type="text" name="nom_ut" required="required" autocomplete="off">
-			                <br><br><label>Mot de passe:</label><input type="password" name="password" required="required" autocomplete="off"></br>
+                            </label> <input type="text" name="nom_ut" required="required" autocomplete="off" placeholder="Nom d'utilisateur">
+			                <br><br></label><input type="password" name="password" required="required" autocomplete="off" placeholder="Mot de passe"></br>
                             <!--i class="fas fa-eye"></i-->
-			                <br><label>Nom:</label><input type="text" name="Nom" required="required" autocomplete="off"></br>
-			                <br><label>Prénom:</label><input type="text" name="Prenom" required="required" autocomplete="off"></br>
-			                <br><label>Accréditation:</label><input type="text" name="Accreditation" required="required" autocomplete="off"></br>
+			                <br><input type="text" name="Nom" required="required" autocomplete="off" placeholder="Nom"></br>
+			                <br></label><input type="text" name="Prenom" required="required" autocomplete="off" placeholder="Prénom"></br>
+			                <br></label><input type="text" name="Accreditation" required="required" autocomplete="off" placeholder="Accréditation"></br>
 			                <br><br><input type="reset"  class="submit" value="Annuler" name="Submit0">
 			                <input type="Submit" class="submit" value="Ajouter" name="Submit">
 			            </form>	

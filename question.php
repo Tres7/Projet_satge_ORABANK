@@ -8,14 +8,14 @@
 </head>
 <body>
   <form method="post" class="box" enctype="multipart/form-data" action="question_recup.php">
-    <h1>Question</h1>
+    <h1>Modification</h1>
     <div  class="inputs">
-      <input type="text" name="Code_question" required="required" autocomplete="off" placeholder="Code question">
-      <!--label>Code question:</label> <input type="text" name="Code_question" required="required" autocomplete="off"-->
+      <!--input type="text" name="Code_question" required="required" autocomplete="off" placeholder="Code question"-->
       <input type="text" name="libelle_question" required="required" autocomplete="off" placeholder="Libellé de la question">
-      <!--br><br><label>Libellé de la question:</label><input type="text" name="libelle_question" required="required" autocomplete="off"></br--> 
+      <!--input type="text" name="Code_reponse" required="required" autocomplete="off" placeholder="Code de la réponse"-->
+      <input type="text" name="libelle_reponse" required="required" autocomplete="off" placeholder="Libellé de la réponse">
       <input type="reset"  class="submit" value="Annuler" name="Submit0">
-      <input type="Submit" class="submit" value="Connexion" name="Submit">  
+      <input type="Submit" class="submit" value="Enregistrer" name="Submit">  
     </div>
   </form>  
 </body>

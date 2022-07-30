@@ -3,6 +3,19 @@
 .user input[class="btn btn-primary btn-user btn-block"]{
 	background: #008000;
 }
+.text-center h1[class="h6-text"]{
+	color: green;
+}
+
+.col-lg-6 img[class="me"] {
+ width: auto;
+ max-height: 100%;
+ object-fit: contain;
+}
+/*.col-lg-6{
+ height: 100px;
+ width: 200px;
+}*/
 
 .bg-gradient-primary{
 	background: #008000;

@@ -128,7 +128,7 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <!--li class="nav-item active">
                 <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Ajouter un administrateur</span></a>
@@ -143,7 +143,7 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
                     <a class="nav-link" href="#">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Ajouter un administrateur</span></a>
-                </li>
+                </li-->
 
             <!-- Divider -->
             <hr class="sidebar-divider">

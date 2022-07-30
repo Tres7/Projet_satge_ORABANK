@@ -19,7 +19,7 @@ header("location:session.php");
 		
 	}else{
 		$erreur="Mauvais login ou mot de passe";
-		echo $erreur; 
+		//echo $erreur; 
 	}
 
 }

@@ -112,11 +112,12 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
+            <a class="sidebar-brand" href="index.html">
+                <img src="Ora.jpeg" height="45">
+                <!--div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Options<!--sup>2</sup--></div>
+                </div-->
+                <!--div class="sidebar-brand-text mx-3">Options<!-sup>2</sup--><!--/div-->
             </a>
 
             <!-- Divider -->
@@ -128,6 +129,11 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Ajouter un administrateur</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Afficher les administrateurs</span></a>
+            </li>
             <?php if($_SESSION["Accreditation"]=== "Super admin" /*$config["Accreditation"][1]*/):  ?>
                 print_r "<li class="nav-item active">
                     <a class="nav-link" href="#">
@@ -135,7 +141,7 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
                         <span>Ajouter un administrateur</span></a>";
                 </li>
 
-            <?php endif    ?>
+            <?php endif?>
 
             <!-- Divider -->
             <hr class="sidebar-divider">

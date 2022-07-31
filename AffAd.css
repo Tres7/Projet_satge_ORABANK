@@ -1,0 +1,18 @@
+thead tr{
+	background-color: darkgreen;
+	color: #fff;
+	text-align: left;
+}
+
+a{
+	color: darkgreen;
+}
+
+caption{
+	color: darkgreen;
+}
+
+.tableau-style{
+	box-shadow: 0 5px 50px darkgreen;
+	border: 1px solid darkgreen;
+}

@@ -1,6 +1,8 @@
+<?php 
+  include("recup.php");
+  ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -44,6 +46,11 @@
                                     <div class="text-center">
                                         <h1 class="h6-text">Authentification</h1>
                                     </div>
+                                    <?php if($erreur): ?>
+                                    	<div class="alert alert-danger">
+                                            <?= $erreur ?>
+                                        </div>
+                                    <?php endif  ?>
                                     <form class="user" method="post" enctype="multipart/form-data" action="recup.php">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"name="nom_ut"

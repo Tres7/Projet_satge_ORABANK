@@ -60,7 +60,7 @@ text-decoration: underline;
 
 
 /*formulaire d'ajout d'administration*/
-form .inputs  input[type="text"], input[type="number"],input[type="password"]{
+/*form .inputs  input[type="text"], input[type="number"],input[type="password"]{
 	background-size: cover;
 	background-repeat: no-repeat;
 	display:block;
@@ -70,7 +70,9 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
 	display: flex;
 	flex-direction: column;
     
-}
+}*/
+
+
 
 
 
@@ -134,16 +136,16 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
                     <span>Ajouter un administrateur</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="AffAdmin.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Afficher les administrateurs</span></a>
             </li>
            
-                <li class="nav-item active">
+                <!--li class="nav-item active">
                     <a class="nav-link" href="#">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Ajouter un administrateur</span></a>
-                </li>
+                </li-->
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -471,10 +473,10 @@ form .inputs  input[type="text"], input[type="number"],input[type="password"]{
 
                     <!-- Content Row -->
                     <div class="row">
-                        <form method="post" class="user" enctype="multipart/form-data" action="Recup_ajout_ad.php">
+                        <form method="post" enctype="multipart/form-data" action="Recup_ajout_ad.php">
 		                <!--h1>Connexion</h1-->
 		                <div  class="form-group">
-                            </label> <input type="text" name="nom_ut" required="required" autocomplete="off" placeholder="Nom d'utilisateur">
+                            <input type="text" name="nom_ut" required="required" autocomplete="off" placeholder="Nom d'utilisateur">
 			                <br><br></label><input type="password" name="password" required="required" autocomplete="off" placeholder="Mot de passe"></br>
                             <!--i class="fas fa-eye"></i-->
 			                <br><input type="text" name="Nom" required="required" autocomplete="off" placeholder="Nom"></br>

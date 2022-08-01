@@ -3,7 +3,7 @@
 
 }
 
-form .form-group  input[type="text"], input[type="number"],input[type="password"]{
+/*form .form-group  input[type="text"], input[type="number"],input[type="password"]{
 	border: 1px dotted #999;
     font-family : inherit;
     font-size   : 100%;
@@ -16,6 +16,12 @@ form .form-group  input[type="text"], input[type="number"],input[type="password"
     padding: 5px;
     height: 30px;
     -webkit-appearance: none;
+}*/
+form{
+	/*centrer le formulaire*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 

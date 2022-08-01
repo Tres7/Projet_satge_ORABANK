@@ -131,7 +131,7 @@ text-decoration: underline;
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="AjouterAdmin.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Ajouter un administrateur</span></a>
             </li>
@@ -473,18 +473,18 @@ text-decoration: underline;
 
                     <!-- Content Row -->
                     <div class="row">
-                        <form method="post" enctype="multipart/form-data" action="Recup_ajout_ad.php">
+                        <!--form method="post" enctype="multipart/form-data" action="Recup_ajout_ad.php"-->
 		                <!--h1>Connexion</h1-->
-		                <div  class="form-group">
+		                <!--div  class="form-group">
                             <input type="text" name="nom_ut" required="required" autocomplete="off" placeholder="Nom d'utilisateur">
-			                <br><br></label><input type="password" name="password" required="required" autocomplete="off" placeholder="Mot de passe"></br>
+			                <br><br></label><input type="password" name="password" required="required" autocomplete="off" placeholder="Mot de passe"></br-->
                             <!--i class="fas fa-eye"></i-->
-			                <br><input type="text" name="Nom" required="required" autocomplete="off" placeholder="Nom"></br>
+			                <!--br><input type="text" name="Nom" required="required" autocomplete="off" placeholder="Nom"></br>
 			                <br></label><input type="text" name="Prenom" required="required" autocomplete="off" placeholder="Prénom"></br>
 			                <br></label><input type="text" name="Accreditation" required="required" autocomplete="off" placeholder="Accréditation"></br>
 			                <br><br><input type="reset"  class="submit" value="Annuler" name="Submit0">
 			                <input type="Submit" class="submit" value="Ajouter" name="Submit">
-			            </form>	
+			            </form-->	
 		            </div>
                     <!-- Begin Page Content -->
                 <div class="container-fluid">

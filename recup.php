@@ -13,7 +13,7 @@ if (isset($_POST['nom_ut']) && isset($_POST['password']) && isset($_POST['Accred
 		$_SESSION["bin"] = ucfirst(strtoupper($user[0]["Nom"])) .
 " "  .  strtolower($user[0]["Prenom"]);
 $_SESSION["connecter"] = "yes";
-header("location:session.php");	
+header("location:SuperAdmin.php");	
 	}else{
 		$erreur="Erreur!";
 	}

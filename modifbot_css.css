@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: white;
+	font-family: helvetica;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box input[class="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: white;
+	font-size: 19px;
+	border-radius: 25px;
+	padding: 1px 20px;
+	margin: 10px auto;
+}

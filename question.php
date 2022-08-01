@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device=width, initial-scale=1.0">
   <title>Formulaire</title>
   <link rel="stylesheet" href="question_css.css">
+  <link rel="stylesheet" href="modifbot_css.css">
 </head>
 <body>
   <form method="post" class="box" enctype="multipart/form-data" action="question_recup.php">

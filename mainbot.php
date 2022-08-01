@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Chating Bot</title>
     <link rel="stylesheet" href="Css/bot.css">
+    <link rel="stylesheet" href="bt.css">
 </head>
 <body>
     <div id="container">

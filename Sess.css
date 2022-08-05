@@ -1,9 +1,14 @@
-#accordionSidebar
-{
-	color: blackgreen;
+#accordionSidebar{
+	/*color: dark;*/
+	background: #006400;
 }
 
 .container-fluid a[class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"]{
 	color: dark;
 	background-color: darkgreen;
+}
+
+#dataTable tbody,th{
+	/*color: dark;*/
+	color: #006400;
 }

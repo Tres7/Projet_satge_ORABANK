@@ -1,24 +1,12 @@
 <? php
-session_start();
-include("recup.php");
-include("config.php");
-if ($_SESSION["connecter"] != "yes") {
-header("location:Formulaire_admin.php");
-    exit();//arrêt prématuré pour au cas ou
-}
-if (date("H") < 18)
-$bienvenue = //"Bonjour et bienvenue "  .
-$_SESSION["bin"];
-else
-$bienvenue = //"Bonsoir et bienvenue "  .
-$_SESSION["bin"];
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -256,7 +244,52 @@ $_SESSION["bin"];
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Affichage des administrateurs</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Affichage des questions</h1>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Numéro</th>
+                                            <th>Libellé de la question</th>
+                                            <th>Options</th>
+                                        </tr>
+                                    </thead>
+                                    <?php
+                                        include("Connexion.php");
+                                        //include("ProjetRecuperation.php");
+                                        $requet=$bdd->query('select * from questions');
+                                        $requet->execute();
+                                        while($data= $requet->fetch())
+                                            {   
+
+            	                              echo "<tbody>";
+                                              echo "<tr>";
+                                              $id=$data['numero'];
+                                              echo"<td>".$data['numero']."</td> 
+                                              <td>".$data['libelle_question']."</td>
+                                              <td><button type='submit'><a href='SupprimerAdmin.php?id=$id'> Supprimer</a></button></td>";
+                                               echo"</tr>";
+                                               echo "<tbody>";
+            }
+            ?> 
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+                <!--second tableau -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Affichage des réponses</h1>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -266,40 +299,24 @@ $_SESSION["bin"];
                                     <thead>
                                         <tr>
                                             <th>id</th>
-                                            <th>Nom d'utilisateur</th>
-                                            <th>Nom</th>
-                                            <th>Prénom</th>
-                                            <th>Accréditation</th>
+                                            <th>Libellé de la réponse</th>
                                             <th>Options</th>
                                         </tr>
                                     </thead>
-                                    <!--tfoot>
-                                        <tr>
-                                            <th>id</th>
-                                            <th>Nom d'utilisateur</th>
-                                            <th>Nom</th>
-                                            <th>Prénom</th>
-                                            <th>Accréditation</th>
-                                            <th>Salary</th>
-                                        </tr>
-                                    </tfoot-->
                                     <?php
                                         include("Connexion.php");
                                         //include("ProjetRecuperation.php");
-                                        $requet=$bdd->query('select id,nom_ut,Nom,Prenom,Accreditation from administrateur');
+                                        $requet=$bdd->query('select * from reponses');
                                         $requet->execute();
                                         while($data= $requet->fetch())
                                             {   
 
             	                              echo "<tbody>";
                                               echo "<tr>";
-                                              $id=$data['id'];
-                echo" <td>".$data['id']."</td>
-                    <td>".$data['nom_ut']."</td>
-                    <td>".$data['Nom']."</td>
-                    <td>".$data['Prenom']."</td>
-                    <td>".$data['Accreditation']."</td>
-                    <td><button type='submit'><a href='SupprimerAdmin.php?id=$id'> Supprimer</a></button></td>";
+                                              $id=$data['id_reponse'];
+                                              echo" <td>".$data['id_reponse']."</td>
+                                              <td>".$data['libelle_reponse']."</td>
+                                              <td><button type='submit'><a href='SupprimerAdmin.php?id=$id'> Supprimer</a></button></td>";
 
                     echo"</tr>";
                 echo "<tbody>";
@@ -312,14 +329,13 @@ $_SESSION["bin"];
                     </div>
 
                 </div>
-                <!-- /.container-fluid -->
 
             </div>
-            <!--div class="d-sm-flex align-items-center justify-content-between mb-4"-->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4"-->
                         <!--h1 class="h3 mb-0 text-gray-800">Accueil</h1-->
                         <!--button class="btn btn-warning" onclick="window.print()" value="Print table" >Imprimer ce tableau</button-->
-                        <!--a href="deconnexion.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Se déconnecter</a-->
+                        <a href="deconnexion.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Se déconnecter</a>
                     <!--/div>
                     <SCRIPT LANGUAGE="JavaScript"> 
                         if (window.print) {

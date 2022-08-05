@@ -40,7 +40,7 @@ $_SESSION["bin"];
 <body onLoad="document.fo.login.focus()" id="page-top">
 <!--a  href="deconnexion.php">Se déconnecter</a-->
     <!-- Page Wrapper -->
-    <div id="wrapper">
+    <div id="wrapper" class="boss">
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -75,7 +75,7 @@ $_SESSION["bin"];
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fa-solid fa-user"></i>
                     <span>Administrateur</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -98,7 +98,8 @@ $_SESSION["bin"];
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Options:</h6>
-                        <a class="collapse-item" href="QuestionAff.php">Afficher</a>
+                        <a class="collapse-item" href="Affichage_question.php">Afficher</a>
+                        <a class="collapse-item" href="question.php">Ajouter</a>
                     </div>
                 </div>
             </li>
@@ -259,8 +260,7 @@ $_SESSION["bin"];
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Accueil</h1>
-                        <a href="deconnexion.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Se déconnecter</a>
+                        <a href="deconnexion.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-sign-out-alt"></i> Se déconnecter</a>
                     </div>
 
                     <!-- Content Row -->

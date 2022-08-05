@@ -129,10 +129,20 @@ Contactez-nous pour connaître les documents nécessaires à la demande de prêt
                 
             </div>
             <button onclick="document.getElementById('messageDisplaySection').style.display='block'" class="bouton noir">Posez vos questions</button>
-            <div id="container">
+            <!--div class="hidden modal_panel" id="pnl_chat_frame" data-modal-panel>
+        
+            <div class="inner" style="max-height: 40rem;left: auto; top: auto; background: none; padding: 0; max-width: 30rem;overflow: visible;">
+                <button class="close-button" data-close="" data-chat-close aria-label="" type="button" style="color: black; top: -2rem; right: 0.5rem; font-weight: bold">
+                                    <span aria-hidden="true">×</span>
+                </button>
+                <iframe id="wcs_frame" src="https://ice.ecobank.com/chatbotui" allowfullscreen  scrolling="auto" frameborder="0" style="width: 100%;height:500px;"></iframe>
+                
+            </div-->
+
+    <div id="container" class="hidden modal_panel" data-modal-panel>
         <div id="dot1"></div>
         <div id="dot2"></div>
-        <div id="screen">
+        <div id="screen" >
             <div id="header">BOT</div>
             <div id="messageDisplaySection">
                 <!-- bot messages -->
@@ -191,36 +201,7 @@ Contactez-nous pour connaître les documents nécessaires à la demande de prêt
         });
     </script>
 
-            <!-- Seven -->
-                    <!--section class="wrapper style1 align-center">
-                        <div class="inner medium">
-                            <h2></h2>
-                            <form method="post" action="#">
-                                    <div class="field">
-                                        <label for="message" class="hi">Questions éventuelles</label>
-                                        <textarea name="message" id="message" rows="6"></textarea>
-                                    </div>
-                                    <form method="post" enctype="multipart/form-data" action="OTG_recuperation.php">
-                                        <div class="field half">
-                                        <label for="text"></label>
-                                        <input placeholder="Tapez votre question(Pour vous faciliter la tâche tapez juste la lettre correspondant à la question)" type="text" name=question id="email" value="" />
-                                    </div>
-                                    <br><ul class="actions special">
-                                    <li><input type="submit" name="submit" id="submit" value="Valider" /></li>
-                                    </ul>
-                                    </form>
-                                    
-                                    
-                                    <div class="field">
-                                        <label for="message">Message</label>
-                                        <br><textarea  name="message" id="message" rows="6"></textarea>
-                                    </div>
-                                </div>
-                                
-                            </form>
-
-                        </div>
-                    </section-->
+            
             
 
         </div>
@@ -238,8 +219,15 @@ Contactez-nous pour connaître les documents nécessaires à la demande de prêt
                         </div>
             <br><div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; ORABANK TOGO</p></div>
             <div align="right">
-                <a href="mainbot.php">CONTACTEZ-NOUS</a>
+                <a class="button ecogreen" data-open="container"><i class="bts bt-comments"></i>Discussion en temps réel</a>
             </div>
+            <br><div align="right">
+                <a class="button ecogreen" data-open="" href="Formulaire_admin.php"><i class="bts bt-comments"></i>Se connecter</a>
+            </div>
+            
+
+
+            
             
         </footer>
         <!-- Bootstrap core JS-->

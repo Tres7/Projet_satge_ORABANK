@@ -270,7 +270,7 @@
                                               echo "<tr>";
                                               $id=$data['numero'];
                                               echo"<td>".$data['numero']."</td> 
-                                              <td>".$data['libelle_question']."</td>
+                                              <td>".$data['libelle_questions']."</td>
                                               <td><button type='submit'><a href='SupprimerAdmin.php?id=$id'> Supprimer</a></button></td>";
                                                echo"</tr>";
                                                echo "<tbody>";
@@ -315,7 +315,7 @@
                                               echo "<tr>";
                                               $id=$data['id_reponse'];
                                               echo" <td>".$data['id_reponse']."</td>
-                                              <td>".$data['libelle_reponse']."</td>
+                                              <td>".$data['libelle_reponses']."</td>
                                               <td><button type='submit'><a href='SupprimerAdmin.php?id=$id'> Supprimer</a></button></td>";
 
                     echo"</tr>";
@@ -334,8 +334,8 @@
             <div class="d-sm-flex align-items-center justify-content-between mb-4"-->
                         <!--h1 class="h3 mb-0 text-gray-800">Accueil</h1-->
                         <!--button class="btn btn-warning" onclick="window.print()" value="Print table" >Imprimer ce tableau</button-->
-                        <a href="deconnexion.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Se déconnecter</a>
+                        <!--a href="deconnexion.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Se déconnecter</a-->
                     <!--/div>
                     <SCRIPT LANGUAGE="JavaScript"> 
                         if (window.print) {
@@ -370,8 +370,8 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <div class="modal-header">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>

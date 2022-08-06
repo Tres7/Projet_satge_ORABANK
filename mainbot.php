@@ -13,10 +13,10 @@
         <div id="dot1"></div>
         <div id="dot2"></div>
         <div id="screen">
-            <div id="header">BOT</div>
+            <div id="header">INFORMATIONS</div>
             <div id="messageDisplaySection">
                 <!-- bot messages -->
-                <div class="chat botMessages">Salut ici! Puis-je vous aider?</div>
+                <!--div class="chat botMessages">Salut ici! Puis-je vous aider?</div>
                 <div class="chat botMessages"><p>Je suis votre assistant clientèle.Je suis là pour palier à vos inquiétudes.
                 Voici quelques informations sur les crédits.
                 <br>1- Crédit scolaire
@@ -27,11 +27,11 @@
                 <br>6-Avance sur salaire
                 <br>7-Ora'Conso
             </p>
-                 </div>
+                 </div-->
 
                 <!-- usersMessages -->
                 <div id="messagesContainer">
-                <div class="chat usersMessages">I need your help to build a website.</div>
+                <!--div class="chat usersMessages">I need your help to build a website.</div-->
             </div>
         </div>
             <!-- messages input field -->

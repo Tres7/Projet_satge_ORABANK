@@ -21,6 +21,11 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="admin.css" rel="stylesheet">
+    <!--script>
+  function boiteAlerte() {
+     alert("Identifiants incorrects!");
+  }
+  </script-->
 
 </head>
 
@@ -68,9 +73,11 @@
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
                                                 <label class="custom-control-label" for="customCheck">Se souvenir</label>
-                                            </div>
+                                            </div
                                         </div-->
                                         <input type="Submit" class="btn btn-primary btn-user btn-block" value="Connexion" name="Submit">
+                                        <input type="reset" class="btn btn-primary btn-user btn-block" value="Annuler" name="Submit">
+                                        <!--a href="" type="reset" class="btn btn-primary btn-user btn-block" value="Annuler" name="Submit"></a-->
                                         <!--a href="" type="Submit" class="btn btn-primary btn-user btn-block" name="Submit">
                                             Connexion
                                         </a-->

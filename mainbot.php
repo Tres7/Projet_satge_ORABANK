@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Chating Bot</title>
+    <title>Discussion en temps réel</title>
     <link rel="stylesheet" href="Css/bot.css">
     <link rel="stylesheet" href="bt.css">
 </head>
@@ -36,10 +36,11 @@
         </div>
             <!-- messages input field -->
             <div id="userInput">
-                <input type="text" name="messages" id="messages" autocomplete="OFF" placeholder="Taper votre message ici." required>
+                <input type="text" name="messages" id="messages" autocomplete="off" placeholder="Taper votre message ici...." required>
                 <input type="submit" value="Envoyer" id="send" name="send">
+
             </div>
-        </div>
+        
     </div> 
 
     <!-- jQuery CDN -->

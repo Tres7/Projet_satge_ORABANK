@@ -11,10 +11,18 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="Cassets/css/main.css" />
         <link rel="stylesheet" href="Cassets/css/monfichier.css"/>
+        <link rel="stylesheet" href="Projet.css"/>
+        <!--link rel="stylesheet" href="css/jquery.convform.css"/-->
         <noscript><link rel="stylesheet" href="Cassets/css/noscript.css"/></noscript>
         <link href="css/styles.css" rel="stylesheet" />
+        <!--link href="c.css" rel="stylesheet" /-->
+        <!--script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/jquery.convform.js"></script-->
     </head>
     <body>
+        
+
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
@@ -37,7 +45,7 @@
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="orabank.jpg" alt="..." /></div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light">Un partenaire à votre écoute!</h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                    <p>Orabank Togo est une institution financière qui a pour objectif de participer activement au développement durable de l’Afrique.......</p>
                     <a class="monBoutton" href="https://www.orabank.net/fr">Aller sur le site principal</a>
                 </div>
             </div>
@@ -127,83 +135,7 @@ Contactez-nous pour connaître les documents nécessaires à la demande de prêt
                     </div>
                 </div>
                 
-            </div>
-            <button onclick="document.getElementById('messageDisplaySection').style.display='block'" class="bouton noir">Posez vos questions</button>
-            <!--div class="hidden modal_panel" id="pnl_chat_frame" data-modal-panel>
-        
-            <div class="inner" style="max-height: 40rem;left: auto; top: auto; background: none; padding: 0; max-width: 30rem;overflow: visible;">
-                <button class="close-button" data-close="" data-chat-close aria-label="" type="button" style="color: black; top: -2rem; right: 0.5rem; font-weight: bold">
-                                    <span aria-hidden="true">×</span>
-                </button>
-                <iframe id="wcs_frame" src="https://ice.ecobank.com/chatbotui" allowfullscreen  scrolling="auto" frameborder="0" style="width: 100%;height:500px;"></iframe>
-                
-            </div-->
-
-    <div id="container" class="hidden modal_panel" data-modal-panel>
-        <div id="dot1"></div>
-        <div id="dot2"></div>
-        <div id="screen" >
-            <div id="header">BOT</div>
-            <div id="messageDisplaySection">
-                <!-- bot messages -->
-                <div class="chat botMessages">Salut ici! Puis-je vous aider?</div>
-                <div class="chat botMessages">Je suis votre assistant clientèle.Je suis là pour palier à vos inquiétudes</div>
-
-                <!-- usersMessages -->
-                <div id="messagesContainer">
-                <div class="chat usersMessages">I need your help to build a website.</div>
-            </div>
-        </div>
-            <!-- messages input field -->
-            <div id="userInput">
-                <input type="text" name="messages" id="messages" autocomplete="OFF" placeholder="Taper votre message ici." required>
-                <input type="submit" value="Send" id="send" name="send">
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
-    <!-- Jquery Start -->
-    <script>
-        $(document).ready(function(){
-            $("#messages").on("keyup",function(){
-
-                if($("#messages").val()){
-                    $("#send").css("display","block");
-                }else{
-                    $("#send").css("display","none");
-                }
-            });
-        });
-        // when send button clicked
-        $("#send").on("click",function(e){
-            $userMessage = $("#messages").val();
-            $appendUserMessage = '<div class="chat usersMessages">'+ $userMessage +'</div>';
-            $("#messageDisplaySection").append($appendUserMessage);
-
-            // ajax start
-            $.ajax({
-                url: "bot.php",
-                type: "POST",
-                // sending data
-                data: {messageValue: $userMessage},
-                // response text
-                success: function(data){
-                    // show response
-                    $appendBotResponse = '<div id="messagesContainer"><div class="chat botMessages">'+data+'</div></div>';
-                    $("#messageDisplaySection").append($appendBotResponse);
-                }
-            });
-            $("#messages").val("");
-            $("#send").css("display","none");
-        });
-    </script>
-
-            
-            
-
+            </div> 
         </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
@@ -218,9 +150,23 @@ Contactez-nous pour connaître les documents nécessaires à la demande de prêt
                             <!--p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p-->
                         </div>
             <br><div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; ORABANK TOGO</p></div>
-            <div align="right">
+            <!--div align="right">
                 <a class="button ecogreen" data-open="container"><i class="bts bt-comments"></i>Discussion en temps réel</a>
+            </div-->
+            <!--chatbot-->
+            
+            <!--div class="" align="right"-->
+                <!--a href="">Discussion en temps réel</a-->
+                <!--i class="fa fa-comments-o" aria-hidden="true"></i-->
+                <!--a href="" class="chat_icon">Discussion en temps réel</a-->
+            <!--/div-->
+            <!--div class="chat_box" >
+            
+            </div-->
+            <div align="right">
+                <a class="button ecogreen" data-open="" href="mainbot.php"><i class="bts bt-comments"></i>CONTACTEZ-NOUS</a>
             </div>
+
             <br><div align="right">
                 <a class="button ecogreen" data-open="" href="Formulaire_admin.php"><i class="bts bt-comments"></i>Se connecter</a>
             </div>

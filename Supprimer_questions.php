@@ -212,7 +212,27 @@
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
-                            
+                            <!-- Dropdown - User Information -->
+                            <!--div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div-->
                         </li>
 
                     </ul>
@@ -223,46 +243,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Affichage des questions</h1>
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Numéro</th>
-                                            <th>Libellé de la question</th>
-                                            <th>Options</th>
-                                        </tr>
-                                    </thead>
-                                    <?php
-                                        include("Connexion.php");
-                                        //include("ProjetRecuperation.php");
-                                        $requet=$bdd->query('select * from questions');
-                                        $requet->execute();
-                                        while($data= $requet->fetch())
-                                            {   
-
-            	                              echo "<tbody>";
-                                              echo "<tr>";
-                                              $id=$data['numero'];
-                                              echo"<td>".$data['numero']."</td> 
-                                              <td>".$data['libelle_questions']."</td>
-                                              <td><button type='submit'><a href='Supprimer_questions.php?id=$id'> Supprimer</a></button></td>";
-                                               echo"</tr>";
-                                               echo "<tbody>";
-            }
-            ?> 
-                                    
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                    
                 <!-- /.container-fluid -->
 
                 <!--second tableau -->
@@ -279,24 +260,26 @@
                                     <thead>
                                         <tr>
                                             <th>id</th>
-                                            <th>Libellé de la réponse</th>
+                                            <th>Libellé de la question</th>
                                             <th>Options</th>
                                         </tr>
                                     </thead>
                                     <?php
                                         include("Connexion.php");
                                         //include("ProjetRecuperation.php");
-                                        $requet=$bdd->query('select * from reponses');
+                                        $supp=$bdd->prepare("delete from questions where numero = :numero ");
+                                        $supp->execute(array('id'=>$_GET['numero']));
+                                        $requet=$bdd->query('select * from questions');
                                         $requet->execute();
                                         while($data= $requet->fetch())
                                             {   
 
             	                              echo "<tbody>";
                                               echo "<tr>";
-                                              $id=$data['id_reponse'];
-                                              echo" <td>".$data['id_reponse']."</td>
+                                              $id=$data['numero'];
+                                              echo" <td>".$data['numero']."</td>
                                               <td>".$data['libelle_reponses']."</td>
-                                              <td><button type='submit'><a href='Supprimer_reponse.php?id=$id'> Supprimer</a></button></td>";
+                                              <td><button type='submit'><a href='Supprimer_questions.php?id=$id'> Supprimer</a></button></td>";
 
                     echo"</tr>";
                 echo "<tbody>";

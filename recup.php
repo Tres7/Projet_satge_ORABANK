@@ -15,7 +15,7 @@ if (isset($_POST['nom_ut']) && isset($_POST['password']) && isset($_POST['Accred
 $_SESSION["connecter"] = "yes";
 header("location:SuperAdmin.php");	
 	}else{
-		$erreur="Erreur!";
+		echo "Erreur!";
 	}
 	if(count($user) > 0 && $_POST['Accreditation']=="admin"){
 		$_SESSION["bin"] = ucfirst(strtoupper($user[0]["Nom"])) .

@@ -3,7 +3,7 @@
 include("Connexion.php");
 if (&& isset($_POST['libelle_question']) && isset($_POST['libelle_reponse']))
         {
-
+            echo "Ajout effectué avec succès";
             $insertion=$bdd->prepare('insert into questions (Code_question,libelle_question) values(:libelle_question)');
             $insert=$bdd->prepare('insert into reponses (libelle_reponse) values(:libelle_reponse)');
 
